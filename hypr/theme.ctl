@@ -1,4 +1,4 @@
-1|Catppuccin-Mocha|Catppuccin.catppuccin-vsc~Catppuccin Mocha|~/Hyprdots/dotfiles/swww/Catppuccin-Mocha/rain_world1.png
+1|Catppuccin-Mocha|Catppuccin.catppuccin-vsc~Catppuccin Mocha|~/Hyprdots/dotfiles/swww/Catppuccin-Mocha/hanged_man_tree.jpg
 0|Catppuccin-Latte|Catppuccin.catppuccin-vsc~Catppuccin Latte|~/Hyprdots/dotfiles/swww/Catppuccin-Latte/jormungandr.jpg
 0|Decay-Green|decaycs.decay~Decayce|~/Hyprdots/dotfiles/swww/Decay-Green/moments_before_desk.png
 0|Rose-Pine|mvllow.rose-pine~Rosé Pine|~/Hyprdots/dotfiles/swww/Rose-Pine/mountain_dragon_pink.jpg
