@@ -4,7 +4,7 @@
 
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-rofThm="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/themes"
+rofThm="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/themes"
 
 # regen color conf
 

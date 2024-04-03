@@ -1,9 +1,9 @@
     "custom/mode": {
         "format": "{}",
         "exec": "echo ; echo 󰟡 switch mode",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/themeswitch.sh -n",
-        "on-click-right": "~/Hyprdots/dotfiles/hypr/scripts/themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/themeselect.sh",
+        "on-click": "~/dotfiles/hypr/scripts/themeswitch.sh -n",
+        "on-click-right": "~/dotfiles/hypr/scripts/themeswitch.sh -p",
+        "on-click-middle": "sleep 0.1 && ~/dotfiles/hypr/scripts/themeselect.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },

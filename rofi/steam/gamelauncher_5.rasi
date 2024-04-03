@@ -6,7 +6,7 @@ configuration {
     font:                        "JetBrainsMono Nerd Font 8";
 }
 
-@theme "~/Hyprdots/dotfiles/rofi/themes/theme.rasi"
+@theme "~/dotfiles/rofi/themes/theme.rasi"
 
 
 // Main //
@@ -22,7 +22,7 @@ window {
     border:                      0px;
     border-radius:               0px;
     border-color:                transparent;
-    background-image:            url("~/Hyprdots/dotfiles/rofi/assets/steamdeck_holographic.png", width);
+    background-image:            url("~/dotfiles/rofi/assets/steamdeck_holographic.png", width);
     background-color:            transparent;
 }
 mainbox {

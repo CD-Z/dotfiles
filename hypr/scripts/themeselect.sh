@@ -3,7 +3,7 @@
 # set variables
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-RofiConf="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/themeselect.rasi"
+RofiConf="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/themeselect.rasi"
 
 
 # scale for monitor x res
@@ -30,6 +30,6 @@ done | rofi -dmenu -theme-str "${r_override}" -config $RofiConf -select "${gtkTh
 # apply theme
 if [ ! -z $ThemeSel ] ; then
     "${ScrDir}/themeswitch.sh" -s $ThemeSel
-    dunstify "t1" -a " ${ThemeSel}" -i "~/Hyprdots/dotfiles/dunst/icons/hyprdots.png" -r 91190 -t 2200
+    notify-send -a "t1" -i "~/.config/dunst/icons/hyprdots.png" " ${ThemeSel}"
 fi
 

@@ -5,7 +5,7 @@ configuration {
     font:                        "JetBrainsMono Nerd Font 2";
 }
 
-@theme "~/Hyprdots/dotfiles/rofi/themes/theme.rasi"
+@theme "~/dotfiles/rofi/themes/theme.rasi"
 
 
 // Main //
@@ -28,7 +28,7 @@ mainbox {
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
     background-color:            transparent;
-    background-image:            url("~/Hyprdots/dotfiles/swww/wall.blur", height);
+    background-image:            url("~/dotfiles/swww/wall.blur", height);
 }
 
 
@@ -44,7 +44,7 @@ entry {
     padding:                     70px;
     text-color:                  @main-fg;
     background-color:            @main-bg;
-    background-image:            url("~/Hyprdots/dotfiles/swww/wall.blur", width);
+    background-image:            url("~/dotfiles/swww/wall.blur", width);
 }
 
 

@@ -1,12 +1,12 @@
     "custom/spotify": {
-        "exec": "/usr/bin/python3 $HOME/Hyprdots/dotfiles/waybar/modules/mediaplayer.py --player spotify",
+        "exec": "/usr/bin/python3 $HOME/dotfiles/waybar/modules/mediaplayer.py --player spotify",
         "format": " {}",
         "return-type": "json",
         "on-click": "playerctl play-pause --player spotify",
 	"on-click-right": "playerctl next --player spotify",
 	"on-click-middle": "playerctl previous --player spotify",
-	"on-scroll-up": "~/Hyprdots/dotfiles/hypr/scripts/spotifyvolumecontrol.sh up",
-	"on-scroll-down": "~/Hyprdots/dotfiles/hypr/scripts/spotifyvolumecontrol.sh down",
+	"on-scroll-up": "~/dotfiles/hypr/scripts/spotifyvolumecontrol.sh up",
+	"on-scroll-down": "~/dotfiles/hypr/scripts/spotifyvolumecontrol.sh down",
 	"max-length": 25,
         "escape": true,
         "tooltip": true

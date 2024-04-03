@@ -12,7 +12,7 @@ configuration {
     icon-theme:                  "Tela-circle-dracula";
 }
 
-@theme "~/Hyprdots/dotfiles/rofi/themes/theme.rasi"
+@theme "~/dotfiles/rofi/themes/theme.rasi"
 
 
 // Main //
@@ -52,7 +52,7 @@ listbox {
     spacing:                     5px;
     orientation:                 horizontal;
     children:                    [ "mode-switcher" , "listview" ];
-    background-image:            url("~/Hyprdots/dotfiles/swww/wall.blur", height);
+    background-image:            url("~/dotfiles/swww/wall.blur", height);
 }
 listview {
     padding:                     20px;

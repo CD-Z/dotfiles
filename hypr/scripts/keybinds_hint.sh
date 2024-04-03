@@ -1,20 +1,21 @@
 #!/usr/bin/env sh
 
 pkill -x rofi && exit
-ConfDir="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}"
+ScrDir=`dirname "$(realpath "$0")"`
+source $ScrDir/globalcontrol.sh
+
+ConfDir="${XDG_CONFIG_HOME:-$HOME/.config}"
 keyConfDir="$ConfDir/hypr"
 keyConf="$keyConfDir/hyprland.conf $keyConfDir/keybindings.conf $keyConfDir/userprefs.conf  $*"
 tmpMapDir="/tmp"
 tmpMap="$tmpMapDir/hyprdots-keybinds.jq"
-
-. $HOME/Hyprdots/dotfiles/hypr/scripts/globalcontrol.sh
 roDir="$ConfDir/rofi"
-roconf="$roDir/Keybinds_Hint.rasi"
+roconf="$roDir/clipboard.rasi"
 
 # read hypr theme border
-wind_border=$((hypr_border * 3))
-elem_border=$([ $hypr_border -eq 0 ] && echo "10" || echo $((hypr_border * 2)))
-r_override="window {border: ${hypr_width}px; border-radius: ${wind_border}px;} element {border-radius: ${elem_border}px;}"
+wind_border=$(( hypr_border * 3/2 ))
+elem_border=`[ $hypr_border -eq 0 ] && echo "5" || echo $hypr_border`
+r_override="window {height: 65%; width: 35%; border: ${hypr_width}px; border-radius: ${wind_border}px;} entry {border-radius: ${elem_border}px;} element {border-radius: ${elem_border}px;} entry {padding: 45px;}"
 
 # read hypr font size
 fnt_override=$(gsettings get org.gnome.desktop.interface font-name | awk '{gsub(/'\''/,""); print $NF}')
@@ -24,7 +25,7 @@ fnt_override="configuration {font: \"JetBrainsMono Nerd Font ${fnt_override}\";}
 icon_override=$(gsettings get org.gnome.desktop.interface icon-theme | sed "s/'//g")
 icon_override="configuration {icon-theme: \"${icon_override}\";}"
 
- keyVars="$(grep -h '^ *\$' $keyConf | awk -F ' = ' '{gsub(/^ *\$| *$/, "", $1); gsub(/^ *| *$/, "", $2); print $1 "='\''"$2"'\''"}')"
+keyVars="$(grep -h '^ *\$' $keyConf | awk -F ' = ' '{gsub(/^ *\$| *$/, "", $1); gsub(/^ *| *$/, "", $2); print $1 "='\''"$2"'\''"}')"
 keyVars+="
 "
 keyVars+="HOME=$HOME"
@@ -58,7 +59,6 @@ substitute_vars() {
 
 
 
-# scrPath='~/Hyprdots/dotfiles/hypr/scripts'
 # comments=$(awk -v scrPath="$scrPath" -F ',' '!/^#/ && /bind*/ && $3 ~ /exec/ && NF && $4 !~ /^ *$/ {gsub(/\$scrPath/, scrPath, $4); print $4}' $keyConf | sed "s#\"#'#g" )
   comments=$(awk  -F ',' '!/^#/ && /bind*/ && $3 ~ /exec/ && NF && $4 !~ /^ *$/ { print $4}' $keyConf | sed "s#\"#'#g" )
   comments=$(substitute_vars "$comments" | awk -F'#' '{gsub(/^ */, "", $1); gsub(/ *$/, "", $1); split($2, a, " "); a[1] = toupper(substr(a[1], 1, 1)) substr(a[1], 2); $2 = a[1]; for(i=2; i<=length(a); i++) $2 = $2" "a[i]; gsub(/^ */, "", $2); gsub(/ *$/, "", $2); if (length($1) > 0) print "\""$1"\" : \""(length($2) > 0 ? $2 : $1)"\","}'|

@@ -95,17 +95,17 @@
     },
 
 "custom/gpuinfo": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
     "tooltip": true,
     "max-length": 1000,
-    "on-click": "~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --toggle",
+    "on-click": "~/dotfiles/hypr/scripts/gpuinfo.sh --toggle",
 },
 
 "custom/gpuinfo#nvidia": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use nvidia ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use nvidia ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
@@ -114,7 +114,7 @@
 },
 
 "custom/gpuinfo#amd": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use amd ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use amd ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
@@ -123,7 +123,7 @@
 },
 
 "custom/gpuinfo#intel": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use intel ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use intel ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
@@ -162,9 +162,9 @@
         "format": "{icon} {volume}",
         "format-muted": "婢",
         "on-click": "pavucontrol -t 3",
-        "on-click-middle": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -o m",
-        "on-scroll-up": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -o i",
-        "on-scroll-down": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -o d",
+        "on-click-middle": "~/dotfiles/hypr/scripts/volumecontrol.sh -o m",
+        "on-scroll-up": "~/dotfiles/hypr/scripts/volumecontrol.sh -o i",
+        "on-scroll-down": "~/dotfiles/hypr/scripts/volumecontrol.sh -o d",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
@@ -183,18 +183,18 @@
         "format-source": "",
         "format-source-muted": "",
         "on-click": "pavucontrol -t 4",
-        "on-click-middle": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -i m",
-        "on-scroll-up": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -i i",
-        "on-scroll-down": "~/Hyprdots/dotfiles/hypr/scripts/volumecontrol.sh -i d",
+        "on-click-middle": "~/dotfiles/hypr/scripts/volumecontrol.sh -i m",
+        "on-scroll-up": "~/dotfiles/hypr/scripts/volumecontrol.sh -i i",
+        "on-scroll-down": "~/dotfiles/hypr/scripts/volumecontrol.sh -i d",
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
     },
 
     "custom/updates": {
-        "exec": "~/Hyprdots/dotfiles/hypr/scripts/systemupdate.sh",
+        "exec": "~/dotfiles/hypr/scripts/systemupdate.sh",
         "return-type": "json",
         "format": "󰮯 {}",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/systemupdate.sh up",
+        "on-click": "~/dotfiles/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true,
     },
@@ -220,9 +220,9 @@
     "custom/wallchange": {
         "format": "{}",
         "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/swwwallpaper.sh -n",
-        "on-click-right": "~/Hyprdots/dotfiles/hypr/scripts/swwwallpaper.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/swwwallselect.sh",
+        "on-click": "~/dotfiles/hypr/scripts/swwwallpaper.sh -n",
+        "on-click-right": "~/dotfiles/hypr/scripts/swwwallpaper.sh -p",
+        "on-click-middle": "sleep 0.1 && ~/dotfiles/hypr/scripts/swwwallselect.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -230,9 +230,9 @@
     "custom/mode": {
         "format": "{}",
         "exec": "echo ; echo 󰟡 switch mode",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/themeswitch.sh -n",
-        "on-click-right": "~/Hyprdots/dotfiles/hypr/scripts/themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/themeselect.sh",
+        "on-click": "~/dotfiles/hypr/scripts/themeswitch.sh -n",
+        "on-click-right": "~/dotfiles/hypr/scripts/themeswitch.sh -p",
+        "on-click-middle": "sleep 0.1 && ~/dotfiles/hypr/scripts/themeselect.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -240,9 +240,9 @@
     "custom/wbar": {
         "format": "{}", //    //
         "exec": "echo ; echo  switch menubar //  dock",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/wbarconfgen.sh n",
-        "on-click-right": "~/Hyprdots/dotfiles/hypr/scripts/wbarconfgen.sh p",
-        "on-click-middle": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/quickapps.sh kitty firefox spotify code dolphin",
+        "on-click": "~/dotfiles/hypr/scripts/wbarconfgen.sh n",
+        "on-click-right": "~/dotfiles/hypr/scripts/wbarconfgen.sh p",
+        "on-click-middle": "sleep 0.1 && ~/dotfiles/hypr/scripts/quickapps.sh kitty firefox spotify code dolphin",
         "interval" : 86400,
         "tooltip": true
     },
@@ -250,9 +250,9 @@
     "custom/cliphist": {
         "format": "{}",
         "exec": "echo ; echo 󰅇 clipboard history",
-        "on-click": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/cliphist.sh c",
-        "on-click-right": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && ~/Hyprdots/dotfiles/hypr/scripts/cliphist.sh w",
+        "on-click": "sleep 0.1 && ~/dotfiles/hypr/scripts/cliphist.sh c",
+        "on-click-right": "sleep 0.1 && ~/dotfiles/hypr/scripts/cliphist.sh d",
+        "on-click-middle": "sleep 0.1 && ~/dotfiles/hypr/scripts/cliphist.sh w",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -260,7 +260,7 @@
     "custom/power": {
         "format": "{}",
         "exec": "echo ; echo  logout",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/logoutlaunch.sh 2",
+        "on-click": "~/dotfiles/hypr/scripts/logoutlaunch.sh 2",
         "interval" : 86400, // once every day
         "tooltip": true
     },

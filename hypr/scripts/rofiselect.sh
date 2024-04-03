@@ -3,10 +3,10 @@
 # set variables
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-RofiConf="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/themeselect.rasi"
-RofiStyle="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/styles"
-RofiAssets="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/assets"
-Rofilaunch="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi/config.rasi"
+RofiConf="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/themeselect.rasi"
+RofiStyle="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/styles"
+RofiAssets="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/assets"
+Rofilaunch="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/config.rasi"
 
 
 # scale for monitor x res
@@ -31,6 +31,6 @@ done | rofi -dmenu -theme-str "${r_override}" -config $RofiConf)
 # apply rofi style
 if [ ! -z $RofiSel ] ; then
     cp "${RofiStyle}/${RofiSel}.rasi" "${Rofilaunch}"
-    dunstify "t1" -a " ${RofiSel} applied..." -i "$RofiAssets/$RofiSel.png" -r 91190 -t 2200
+    notify-send -a "t1" -r 91190 -t 2200 -i "${RofiAssets}/${RofiSel}.png" " ${RofiSel} applied..." 
 fi
 

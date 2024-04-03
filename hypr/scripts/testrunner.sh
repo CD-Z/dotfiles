@@ -2,8 +2,8 @@
 
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-WalDir="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/swww"
-RofDir="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/rofi"
+WalDir="${XDG_CONFIG_HOME:-$HOME/.config}/swww"
+RofDir="${XDG_CONFIG_HOME:-$HOME/.config}/rofi"
 
 roficn=0
 wlogcn=1

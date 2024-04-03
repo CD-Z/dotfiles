@@ -1,4 +1,4 @@
-$HOME/Hyprdots/dotfiles/hypr/themes/Wall-Dcol.conf|${ScrDir}/wallbashypr.sh
+$HOME/.config/hypr/themes/Wall-Dcol.conf|${ScrDir}/wallbashypr.sh
 general {
     col.active_border = rgba(<wallbash_pry2>ff) rgba(<wallbash_pry0>ff) 45deg
     col.inactive_border = rgba(<wallbash_2xa1>ff) rgba(<wallbash_2xa4>ff) 45deg

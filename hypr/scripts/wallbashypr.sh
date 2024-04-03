@@ -4,7 +4,7 @@
 
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-hypDir="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/hypr/themes"
+hypDir="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/themes"
 
 # regen color conf
 

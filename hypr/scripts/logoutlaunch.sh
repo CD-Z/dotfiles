@@ -10,8 +10,8 @@ fi
 # set file variables
 ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
-wLayout="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/wlogout/layout_$1"
-wlTmplt="${XDG_CONFIG_HOME:-$HOME/Hyprdots/dotfiles}/wlogout/style_$1.css"
+wLayout="${XDG_CONFIG_HOME:-$HOME/.config}/wlogout/layout_$1"
+wlTmplt="${XDG_CONFIG_HOME:-$HOME/.config}/wlogout/style_$1.css"
 
 if [ ! -f $wLayout ] || [ ! -f $wlTmplt ] ; then
     echo "ERROR: Config $1 not found..."
@@ -41,7 +41,7 @@ export fntSize=$(( y_mon * 2 / 100 ))
 
 # detect gtk system theme
 export BtnCol=`[ "$gtkMode" == "dark" ] && ( echo "white" ) || ( echo "black" )`
-export WindBg=`[ "$gtkMode" == "dark" ] && ( echo "rgba(0,0,0,0.5)" ) || ( echo "rgba(255,255,255,0.5)" )`
+export WindBg="rgba(255,255,255,0)"
 
 if [ "$EnableWallDcol" -eq 1 ] ; then
     export wbarTheme="Wall-Dcol"

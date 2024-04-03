@@ -12,7 +12,7 @@ configuration {
     icon-theme:                  "Tela-circle-dracula";
 }
 
-@theme "~/Hyprdots/dotfiles/rofi/themes/theme.rasi"
+@theme "~/dotfiles/rofi/themes/theme.rasi"
 
 
 // Main //

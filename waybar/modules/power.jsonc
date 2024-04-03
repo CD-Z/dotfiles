@@ -1,7 +1,7 @@
     "custom/power": {
         "format": "{}",
         "exec": "echo ; echo  logout",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/logoutlaunch.sh 2",
+        "on-click": "~/dotfiles/hypr/scripts/logoutlaunch.sh 2",
         "interval" : 86400, // once every day
         "tooltip": true
     },

@@ -1,5 +1,5 @@
     "hyprland/language": {
         "format": "{short} {variant}",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/keyboardswitch.sh",
+        "on-click": "~/dotfiles/hypr/scripts/keyboardswitch.sh",
     },
 

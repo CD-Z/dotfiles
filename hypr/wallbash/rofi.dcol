@@ -1,4 +1,4 @@
-$HOME/Hyprdots/dotfiles/rofi/themes/Wall-Dcol.rasi|${ScrDir}/wallbashrofi.sh
+$HOME/.config/rofi/themes/Wall-Dcol.rasi|${ScrDir}/wallbashrofi.sh
 * {
     main-bg:            #<wallbash_pry0>E6;
     main-fg:            #<wallbash_pry2>;

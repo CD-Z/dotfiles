@@ -1,15 +1,15 @@
 "custom/gpuinfo": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
     "tooltip": true,
     "max-length": 1000,
-    "on-click": "~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --toggle",
+    "on-click": "~/dotfiles/hypr/scripts/gpuinfo.sh --toggle",
 },
 
 "custom/gpuinfo#nvidia": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use nvidia ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use nvidia ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
@@ -18,7 +18,7 @@
 },
 
 "custom/gpuinfo#amd": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use amd ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use amd ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds
@@ -27,7 +27,7 @@
 },
 
 "custom/gpuinfo#intel": {
-    "exec": " ~/Hyprdots/dotfiles/hypr/scripts/gpuinfo.sh --use intel ",
+    "exec": " ~/dotfiles/hypr/scripts/gpuinfo.sh --use intel ",
     "return-type": "json",
     "format": " {}",
     "interval": 5, // once every 5 seconds

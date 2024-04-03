@@ -1,8 +1,8 @@
     "custom/updates": {
-        "exec": "~/Hyprdots/dotfiles/hypr/scripts/systemupdate.sh",
+        "exec": "~/dotfiles/hypr/scripts/systemupdate.sh",
         "return-type": "json",
         "format": "󰮯 {}",
-        "on-click": "~/Hyprdots/dotfiles/hypr/scripts/systemupdate.sh up",
+        "on-click": "~/dotfiles/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true,
     },

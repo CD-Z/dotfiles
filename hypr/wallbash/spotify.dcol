@@ -1,4 +1,4 @@
-$HOME/Hyprdots/dotfiles/spicetify/Themes/Sleek/Wall-Dcol.ini|${ScrDir}/wallbashspotify.sh
+$HOME/.config/spicetify/Themes/Sleek/Wall-Dcol.ini|${ScrDir}/wallbashspotify.sh
 
 [Wallbash]
 text               = <wallbash_pry2>
